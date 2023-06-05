@@ -9,10 +9,11 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.neutral,
+        'under': "#92FFD0"
       },
     },
     fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
     },
   },

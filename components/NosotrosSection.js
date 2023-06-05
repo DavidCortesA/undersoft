@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
-const Benefits = (props) => {
+const NosotrosSection = (props) => {
   const { data } = props;
   return (
     <>
-      <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
+      <Container id="nosotros" className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
@@ -34,17 +34,15 @@ const Benefits = (props) => {
                 {data.title}
               </h3>
 
-              <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+              <p className="max-w-2xl py-4 text-lg leading-normal text-justify text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 {data.desc}
               </p>
-            </div>
-
-            <div className="w-full mt-5">
-              {data.bullets.map((item, index) => (
-                <Benefit key={index} title={item.title} icon={item.icon}>
-                  {item.desc}
-                </Benefit>
-              ))}
+              <p className="max-w-2xl py-4 text-lg leading-normal text-justify text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+                Nuestro equipo está compuesto por expertos en diseño y desarrollo de aplicaciones web y móviles. Utilizamos las últimas tecnologías y enfoques de vanguardia para crear productos de alta calidad que cumplan con las necesidades y expectativas de nuestros clientes.
+              </p>
+              <p className="max-w-2xl py-4 text-lg leading-normal text-justify text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+                Ya sea que necesites una aplicación móvil nativa para iOS y Android, o una aplicación web receptiva y fácil de usar, estamos aquí para ayudarte. Trabajamos estrechamente contigo para entender tus objetivos y convertirlos en una aplicación funcional y atractiva.
+              </p>
             </div>
           </div>
         </div>
@@ -52,27 +50,4 @@ const Benefits = (props) => {
     </>
   );
 };
-
-function Benefit(props) {
-  return (
-    <>
-      <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
-          {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-indigo-50",
-          })}
-        </div>
-        <div>
-          <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
-            {props.title}
-          </h4>
-          <p className="mt-1 text-gray-500 dark:text-gray-400">
-            {props.children}
-          </p>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default Benefits;
+export default NosotrosSection;
