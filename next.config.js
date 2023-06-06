@@ -4,5 +4,5 @@ module.exports = {
     unoptimized: true,
   },
   basePath: '/undersoft',
-  assetPrefix: '/undersoft/',
+  assetPrefix: '/undersoft',
 };
