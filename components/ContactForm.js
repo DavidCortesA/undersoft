@@ -15,9 +15,9 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar los datos del formulario
+    // Aquí va la lógica para enviar los datos del formulario
     console.log(formData);
-    // Luego de enviar los datos, puedes limpiar el formulario
+    // Luego de enviar los datos, se limpia el formulario
     setFormData({
       name: '',
       email: '',
