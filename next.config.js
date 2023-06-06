@@ -1,8 +1,6 @@
 module.exports = {
-  output: "export",
+  output: "standalone",
   images: {
     unoptimized: true,
   },
-  basePath: '/undersoft',
-  assetPrefix: '/undersoft',
 };
