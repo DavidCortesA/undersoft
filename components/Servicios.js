@@ -8,55 +8,58 @@ import userThreeImg from "../public/img/Software code testing-pana.svg";
 
 const Servicios  = () => {
   return (
-    <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto border-4 border-l-under">
-          <div className="flex flex-col gap-4 justify-between items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
-            <div className="flex items-center gap-6">
-              <Image
-                src={userOneImg}
-                width={120}
-              />
-              <div className="text-xl font-bold">Diseño UI/UX</div>
-            </div>
-            <p className="text-xl leading-normal text-justify">
-              Nuestro equipo de diseñadores se encarga de crear interfaces atractivas y funcionales para tus aplicaciones. Nos enfocamos en diseñar experiencias de usuario intuitivas y agradables, teniendo en cuenta los principios de usabilidad y accesibilidad.
-            </p>
+    <div id="servicios">
+      <Container>
+        <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="lg:col-span-2 xl:col-auto border-4 border-l-under">
+            <div className="flex flex-col gap-4 justify-between items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
+              <div className="flex items-center gap-6">
+                <Image
+                  src={userOneImg}
+                  width={120}
+                />
+                <div className="text-xl font-bold">Diseño UI/UX</div>
+              </div>
+              <p className="text-xl leading-normal text-justify">
+                Nuestro equipo de diseñadores se encarga de crear interfaces atractivas y funcionales para tus aplicaciones. Nos enfocamos en diseñar experiencias de usuario intuitivas y agradables, teniendo en cuenta los principios de usabilidad y accesibilidad.
+              </p>
 
+            </div>
+          </div>
+          <div className="border-4 border-l-under">
+            <div className="flex flex-col gap-4 justify-between items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
+              <div className="flex items-center gap-6">
+                <Image
+                  src={userTwoImg}
+                  width={120}
+                />
+                <h3 className="text-xl font-bold">Aplicaciones web</h3>
+              </div>
+              <p className="text-xl leading-normal text-justify">
+                Utilizamos las mejores prácticas de desarrollo web para crear aplicaciones seguras, escalables y de alto rendimiento. Ya sea que necesites una aplicación web simple o una plataforma compleja, nos aseguramos de que tu producto final sea de alta calidad y cumpla con tus requerimientos.
+              </p>
+
+            </div>
+          </div>
+          <div className="border-4 border-l-under">
+            <div className="flex flex-col justify-between gap-4 items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
+              <div className="flex items-center gap-6">
+                <Image
+                  src={userThreeImg}
+                  width={120}
+                />
+                <h3 className="text-xl font-bold">Aplicaciones moviles</h3>
+              </div>
+              <p className="text-xl leading-normal text-justify">
+                Nuestro equipo de desarrolladores móviles se especializa en la creación de aplicaciones nativas para iOS y Android. Desde la concepción de la idea hasta la publicación en las tiendas de aplicaciones, nos encargamos de todo el ciclo de desarrollo para que puedas llevar tu aplicación móvil con confianza.
+              </p>
+
+            </div>
           </div>
         </div>
-        <div className="border-4 border-l-under">
-          <div className="flex flex-col gap-4 justify-between items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
-            <div className="flex items-center gap-6">
-              <Image
-                src={userTwoImg}
-                width={120}
-              />
-              <h3 className="text-xl font-bold">Aplicaciones web</h3>
-            </div>
-            <p className="text-xl leading-normal text-justify">
-              Utilizamos las mejores prácticas de desarrollo web para crear aplicaciones seguras, escalables y de alto rendimiento. Ya sea que necesites una aplicación web simple o una plataforma compleja, nos aseguramos de que tu producto final sea de alta calidad y cumpla con tus requerimientos.
-            </p>
+      </Container>
+    </div>
 
-          </div>
-        </div>
-        <div className="border-4 border-l-under">
-          <div className="flex flex-col justify-between gap-4 items-center w-full h-full bg-gray-100 p-14 dark:bg-trueGray-800">
-            <div className="flex items-center gap-6">
-              <Image
-                src={userThreeImg}
-                width={120}
-              />
-              <h3 className="text-xl font-bold">Aplicaciones moviles</h3>
-            </div>
-            <p className="text-xl leading-normal text-justify">
-              Nuestro equipo de desarrolladores móviles se especializa en la creación de aplicaciones nativas para iOS y Android. Desde la concepción de la idea hasta la publicación en las tiendas de aplicaciones, nos encargamos de todo el ciclo de desarrollo para que puedas llevar tu aplicación móvil con confianza.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </Container>
   );
 }
 

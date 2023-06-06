@@ -8,9 +8,9 @@ const Navbar = () => {
 
   const navigation = [
     {name: "INICIOS", path: "/" },
-    {name: "NOSOTROS", path: "#nosotros" },
-    {name: "SERVICIOS", path: "#servicios" },
-    {name: "PROYECTOS", path: "#proyectos" },
+    {name: "NOSOTROS", path: "/#nosotros" },
+    {name: "SERVICIOS", path: "/#servicios" },
+    {name: "PROYECTOS", path: "/#proyectos" },
     {name: "TÉRMINOS", path: "/terminos" },
   ];
 
@@ -67,7 +67,7 @@ const Navbar = () => {
                           {route.name}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-black font-bold bg-under hover:text-white rounded-md lg:ml-5">         
+                    <Link href="#contactForm" className="w-full px-6 py-2 mt-3 text-center text-black font-bold bg-under hover:text-white rounded-md lg:ml-5">         
                         CONTACTO
                     </Link>
                   </>
@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-black font-bold bg-under hover:text-white rounded-md md:ml-5">
+          <Link href="#contactForm" className="px-6 py-2 text-black font-bold bg-under hover:text-white rounded-md md:ml-5">
               CONTACTO
           </Link>
 

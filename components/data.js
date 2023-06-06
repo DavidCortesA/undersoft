@@ -6,6 +6,11 @@ const nosotros = {
   image: nosotrosImg,
 };
 
+const proyectos = {
+  title: "Proyectos",
+  desc: "",
+}
 
 
-export {nosotros};
+
+export {nosotros, proyectos};

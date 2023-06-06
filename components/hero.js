@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/tech company-bro.svg";
-import USAID from "../public/img/usaid.svg";
-import miyamoto from "../public/img/miyamoto.svg"
+import USAID from "../public/img/brands/usaid.svg";
+import miyamoto from "../public/img/brands/miyamoto.svg"
 
 const Hero = () => {
   return (
@@ -22,10 +22,9 @@ const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
-                target="_blank"
+                href="/#contactForm"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-bold text-center text-black bg-under rounded-md ">
+                className="px-8 py-4 text-lg font-bold text-center text-black bg-under rounded-md hover:text-white ">
                 CONTACTANOS
               </a>
             </div>

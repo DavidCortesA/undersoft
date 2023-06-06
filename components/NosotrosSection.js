@@ -5,7 +5,7 @@ import Container from "./container";
 const NosotrosSection = (props) => {
   const { data } = props;
   return (
-    <>
+    <div id="nosotros">
       <Container id="nosotros" className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
@@ -47,7 +47,7 @@ const NosotrosSection = (props) => {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 export default NosotrosSection;
